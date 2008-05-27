@@ -1,0 +1,17 @@
+---
+name: Sys-Info-Driver-Windows-XS
+version: 0.10
+author:
+  - 'Burak Gursoy <burak@cpan.org>'
+abstract: XS Wrappers for Sys::Info Windows driver
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+provides:
+  Sys::Info::Driver::Windows::XS:
+    file: lib/Sys/Info/Driver/Windows/XS.pm
+    version: 0.10
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
