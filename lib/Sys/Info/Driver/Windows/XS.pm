@@ -2,7 +2,7 @@ package Sys::Info::Driver::Windows::XS;
 use strict;
 use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
 
-$VERSION = '0.10';
+$VERSION = '0.11';
 
 # (only relevant) indexes for GetSystemMetrics()
 use constant SM_TABLETPC    => 86; # Windows XP Tablet PC edition

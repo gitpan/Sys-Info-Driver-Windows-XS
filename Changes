@@ -1,0 +1,9 @@
+Revision history for Perl extension Sys::Info::Driver::Windows::XS
+
+Time zone is GMT+2.
+
+0.11 Sun Jun  8 22:10:54 2008
+    => Forgot README & Changes to include in distro.
+
+0.10 Tue May 27 22:22:40 2008
+    => First public release.
