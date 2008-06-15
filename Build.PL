@@ -1,4 +1,4 @@
-BEGIN { die "OS unsupported" if $^O !~ m{ \A MSWin }xmsi; }
+BEGIN { die "OS unsupported\n" if $^O !~ m{ \A MSWin }xmsi; }
 use strict;
 use Module::Build;
 use Cwd;

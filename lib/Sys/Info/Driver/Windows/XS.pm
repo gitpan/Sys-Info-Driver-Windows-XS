@@ -2,7 +2,7 @@ package Sys::Info::Driver::Windows::XS;
 use strict;
 use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
 
-$VERSION = '0.11';
+$VERSION = '0.20';
 
 # (only relevant) indexes for GetSystemMetrics()
 use constant SM_TABLETPC    => 86; # Windows XP Tablet PC edition
@@ -22,6 +22,9 @@ use XSLoader;
         SM_MEDIACENTER
         SM_SERVERR2
         SM_STARTER
+    /],
+    info => [qw/
+        GetSystemInfo
     /],
 );
 @EXPORT_OK        = map { @{ $EXPORT_TAGS{$_} } } keys %EXPORT_TAGS;
@@ -64,9 +67,25 @@ and only these constants are defined:
 All these constants and the function itself can be imported by the C<:metrics>
 key.
 
+=head2 GetSystemInfo
+
+An interface to the C<Win32 API> function C<GetSystemInfo>:
+
+    my %si = GetSystemInfo();
+    printf("CPU: %s Family %s Model %s Stepping %s\n",
+        @si{qw/
+            wProcessorArchitecture2
+            wProcessorLevel
+            wProcessorModel
+            wProcessorStepping
+        /}
+    );
+
 =head1 SEE ALSO
 
-L<Sys::Info>, L<http://msdn.microsoft.com/en-us/library/ms724385(VS.85).aspx>.
+L<Sys::Info>,
+L<http://msdn.microsoft.com/en-us/library/ms724385(VS.85).aspx>,
+L<http://msdn.microsoft.com/en-us/library/ms724429(VS.85).aspx>.
 
 =head1 AUTHOR
 
