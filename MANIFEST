@@ -1,0 +1,13 @@
+lib/Sys/Info/Driver/Windows/XS.pm
+tools/ppport.pl
+t/01-pod.t
+t/02-pod-coverage.t
+t/03-metrics.t
+Build.PL
+Makefile.PL
+ppport.h
+XS.xs
+META.yml
+README
+Changes
+MANIFEST

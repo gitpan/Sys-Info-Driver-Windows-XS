@@ -2,6 +2,9 @@ Revision history for Perl extension Sys::Info::Driver::Windows::XS
 
 Time zone is GMT+2.
 
+0.21 Tue Jul  8 21:00:59 2008
+    => Increase distro kwalitee.
+
 0.20 Sun Jun 15 22:37:33 2008
     => Implemented an interface to GetSystemInfo().
 

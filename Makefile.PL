@@ -14,6 +14,6 @@ WriteMakefile(
     LIBS         => [''],   # e.g., '-lm'
     DEFINE       => '',     # e.g., '-DHAVE_SOMETHING'
     INC          => '',     # e.g., '-I/usr/include/other'
-    TYPEMAPS     => ['TYPEMAP'],
+    #TYPEMAPS     => ['TYPEMAP'],
     #XS => { 'XS.xs' => 'lib/Sys/Info/Driver/Windows/XS.xs' }
 );
